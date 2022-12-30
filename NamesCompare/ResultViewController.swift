@@ -54,7 +54,7 @@ class ResultViewController: UIViewController {
     }
     
     func absoluteValue() -> Int {
-        var absValue = abs(charValue(name: yourName) - charValue(name: partnerName))
+        let absValue = abs(charValue(name: yourName) - charValue(name: partnerName))
         
         switch absValue {
         case 0, 1, 2:
