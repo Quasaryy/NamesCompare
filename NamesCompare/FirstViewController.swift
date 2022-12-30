@@ -32,7 +32,8 @@ class FirstViewController: UIViewController {
     }
     
     @IBAction func unwindSegueToFirstVC(segue: UIStoryboardSegue) {
-        
+        partnerNameTF.text = ""
+        yourNameTF.text = ""
     }
     
 }
