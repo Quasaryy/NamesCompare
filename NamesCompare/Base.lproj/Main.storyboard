@@ -78,7 +78,7 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <action selector="ShowResultTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="xY5-JY-J97"/>
+                                    <action selector="showResultTapped" destination="BYZ-38-t0r" eventType="touchUpInside" id="i4Z-Sa-SKz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -154,7 +154,7 @@
                                 </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="goBackTapped" destination="0S7-oo-sv9" eventType="touchUpInside" id="0ax-vU-w8Y"/>
-                                    <segue destination="Q6r-5q-oXm" kind="unwind" unwindAction="unwindSegueToFirstVCWithSegue:" id="xY0-pW-4eX"/>
+                                    <segue destination="Q6r-5q-oXm" kind="unwind" unwindAction="unwindSegueToFirstVCWithSegue:" id="bD3-VO-7N2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -176,6 +176,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="XVe-2P-1nf"/>
+                    <connections>
+                        <outlet property="percentLabel" destination="hX9-22-e4N" id="cPU-V4-fVt"/>
+                        <outlet property="progressBar" destination="Sxd-Wd-SO4" id="ic5-oG-6n0"/>
+                        <outlet property="resultLabel" destination="YcL-qt-1bd" id="FpD-ND-FIJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DER-O6-EEV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="Q6r-5q-oXm" userLabel="Exit" sceneMemberID="exit"/>
