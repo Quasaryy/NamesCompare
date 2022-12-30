@@ -5,7 +5,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -89,7 +88,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96862745289999996" green="0.96078431610000004" blue="0.98431372640000003" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="Ngy-We-9ig" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="7V6-i9-X52"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Ngy-We-9ig" secondAttribute="trailing" constant="30" id="C9B-FV-LV2"/>
@@ -165,7 +164,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="ALP-YW-nT0"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.96870523691177368" green="0.96066957712173462" blue="0.98384302854537964" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hX9-22-e4N" firstAttribute="centerX" secondItem="biT-9k-UJI" secondAttribute="centerX" id="1LZ-TD-rRb"/>
                             <constraint firstItem="hl0-wy-pWQ" firstAttribute="centerX" secondItem="biT-9k-UJI" secondAttribute="centerX" id="1Tu-b2-mXy"/>
@@ -194,9 +193,4 @@
             <point key="canvasLocation" x="721" y="4"/>
         </scene>
     </scenes>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>

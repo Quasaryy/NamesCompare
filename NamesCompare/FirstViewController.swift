@@ -24,6 +24,10 @@ class FirstViewController: UIViewController {
     }
 
     @IBAction func showResultTapped() {
+        if partnerNameTF.text!.isEmpty || yourNameTF.text!.isEmpty {
+            showAlert(title: "Names are missing ", message: "Please enter both names 😀")
+            return
+        }
         performSegue(withIdentifier: "goToResult", sender: nil)
     }
     
@@ -31,6 +35,15 @@ class FirstViewController: UIViewController {
         
     }
     
+}
+
+extension FirstViewController {
+    func showAlert(title: String, message: String) {
+        let alertWindow = UIAlertController(title: title, message: message, preferredStyle: .alert)
+        let okButton = UIAlertAction(title: "OK", style: .default)
+        alertWindow.addAction(okButton)
+        present(alertWindow, animated: true)
+    }
 }
 
 extension FirstViewController: UITextFieldDelegate {
@@ -48,3 +61,4 @@ extension FirstViewController: UITextFieldDelegate {
         return true
     }
 }
+
