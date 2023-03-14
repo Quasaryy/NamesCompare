@@ -24,7 +24,7 @@ class FirstViewController: UIViewController {
     }
 
     @IBAction func showResultTapped() {
-        if partnerNameTF.text!.isEmpty || yourNameTF.text!.isEmpty {
+        if (partnerNameTF.text?.isEmpty ?? true) || (yourNameTF.text?.isEmpty ?? true) {
             showAlert(title: "Names are missing ", message: "Please enter both names 😀")
             return
         }
